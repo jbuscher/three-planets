@@ -122,3 +122,18 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+#links {
+  position: fixed;
+  right: 0;
+  bottom:0;
+  background-color: white;
+  opacity: 50%;
+  border-radius: 8px;
+}
+#links img {
+  height: 19px;
+  width: 19px;
+  float: left;
+  padding-right: 2px;
+}
+
