@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Three.js Planets</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="controls">
+    <div id="button-container">
+      <button id="menu-button">
+        <img src="assets/menu-24px.svg"></img>
+      </button>
+      <button id="start">Start</button>
+    </div>
+
+    <div id="menu" class="hide">
+      <label>
+        <span class="label">Time Scale:</span>
+        <input type="range" min="0" max="1000" value="500" id="time-slider">
+      </label>
+      <div>
+        2 Planets
+        <label class="switch">
+          <input type="checkbox" id="threePlanet" checked="checked">
+          <span class="slider round"></span>
+        </label>
+        3 Planets
+      </div>
+      <hr />
+      <div class="label">Planet 1 Initial Conditions</div>
+      <label><span class="label">X:</span>
+        <input type="number" size="10" id="planet1-x">
+        meters
+      </label>
+      <label><span class="label">Y:</span>
+        <input type="number" size="10" id="planet1-y">
+        meters
+      </label>
+      <label><span class="label">Z:</span>
+        <input type="number" size="10" id="planet1-z">
+        meters
+      </label>
+      <label><span class="label">VX:</span>
+        <input type="number" size="10" id="planet1-vx">
+        m/s
+      </label>
+      <label><span class="label">VY:</span>
+        <input type="number" size="10" id="planet1-vy">
+        m/s
+      </label>
+      <label><span class="label">VZ:</span>
+        <input type="number" size="10" id="planet1-vz">
+        m/s
+      </label>
+      <label><span class="label">Mass:</span>
+        <input type="number" size="10" id="planet1-mass">
+        kg
+      </label>
+      <hr />
+      <div class="label">Planet 2 Initial Conditions</div>
+      <label><span class="label">X:</span>
+        <input type="number" size="10" id="planet2-x">
+        meters
+      </label>
+      <label><span class="label">Y:</span>
+        <input type="number" size="10" id="planet2-y">
+        meters
+      </label>
+      <label><span class="label">Z:</span>
+        <input type="number" size="10" id="planet2-z">
+        meters
+      </label>
+      <label><span class="label">VX:</span>
+        <input type="number" size="10" id="planet2-vx">
+        m/s
+      </label>
+      <label><span class="label">VY:</span>
+        <input type="number" size="10" id="planet2-vy">
+        m/s
+      </label>
+      <label><span class="label">VZ:</span>
+        <input type="number" size="10" id="planet2-vz">
+        m/s
+      </label>
+      <label><span class="label">Mass:</span>
+        <input type="number" size="10" id="planet2-mass">
+        kg
+      </label>
+
+      <!-- optional -->
+      <div id="planet3">
+      <hr />
+      <div class="label">Planet 3 Initial Conditions</div>
+      <label><span class="label">X:</span>
+        <input type="number" size="10" id="planet3-x">
+        meters
+      </label>
+      <label><span class="label">Y:</span>
+        <input type="number" size="10" id="planet3-y">
+        meters
+      </label>
+      <label><span class="label">Z:</span>
+        <input type="number" size="10" id="planet3-z">
+        meters
+      </label>
+      <label><span class="label">VX:</span>
+        <input type="number" size="10" id="planet3-vx">
+        m/s
+      </label>
+      <label><span class="label">VY:</span>
+        <input type="number" size="10" id="planet3-vy">
+        m/s
+      </label>
+      <label><span class="label">VZ:</span>
+        <input type="number" size="10" id="planet3-vz">
+        m/s
+      </label>
+      <label><span class="label">Mass:</span>
+        <input type="number" size="10" id="planet3-mass">
+        kg
+      </label>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script src="bundle.js"></script>
+</html>
