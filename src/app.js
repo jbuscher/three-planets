@@ -174,7 +174,7 @@ export default class App {
   setThreePlanet() {
     this._planets.forEach(p => this._scene.remove( p ));
     this._planets = [
-      new Planet(THREE_BODY_345[0], 0xfff00),
+      new Planet(THREE_BODY_345[0], 0x00ff00),
       new Planet(THREE_BODY_345[1], 0x00ffff),
       new Planet(THREE_BODY_345[2], 0xff00ff),
     ]
@@ -184,8 +184,8 @@ export default class App {
   setTwoPlanet() {
     this._planets.forEach(p => this._scene.remove( p ));
     this._planets = [
-      new Planet(EARTH, 0x00ffff),
-      new Planet(MOON, 0xaaaaaa)
+      new Planet(EARTH, 0x00ff00),
+      new Planet(MOON, 0x00ffff)
     ];
     this._planets.forEach(p => this._scene.add( p ));
   }

@@ -137,3 +137,21 @@ input:checked + .slider:before {
   padding-right: 2px;
 }
 
+.planet-color{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 4px;
+}
+
+.yellow {
+  background-color: #00ff00;
+  opacity: 100%;
+}
+.cyan {
+  background-color: #ff00ff;
+}
+.magenta {
+  background-color: #00ffff;
+}
